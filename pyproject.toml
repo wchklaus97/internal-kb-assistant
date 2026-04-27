@@ -1,0 +1,22 @@
+[project]
+name = "internal-kb-assistant"
+version = "0.1.0"
+description = "Streamlit internal knowledge-base demo with RAG and citations."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "anthropic",
+  "numpy",
+  "openai",
+  "python-dotenv",
+  "streamlit",
+]
+
+[dependency-groups]
+dev = [
+  "pytest",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
